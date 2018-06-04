@@ -68,3 +68,6 @@ We have two main functions to use (the correction and autocomplession like)
 	else cv.listeCorrigee.addAll(b.liste(s.toLowerCase()));
 }
 ```
+* For this example we have a TXT file with all french words and an priority ID for each words 
+
+* When we type a word, we have two list (4 words auto complete and 4 words with the best priority 
