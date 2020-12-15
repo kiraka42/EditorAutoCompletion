@@ -2,10 +2,20 @@
 TextMania is a toolkit in java used for include autocomplession like (T105) in your application.This is an example with an
 text editor :
 
+
+
+
+
 ![Capture 1](source/out.gif)
 
 # Generate a tree data structure 
 At the very begining, we have to generate a tree binary file data stucture with the option "-c" and a txt file with words in your dictionnary.
+
+
+# comparison direct acess VS sequential access
+option -s will provide the sequential access file -> it will take 10 seconds to loads the entire tree
+without option by default we use random access, it takes 3 seconds to loads the same entire tree
+
 
 *** thanks to  FileChannel.MapMode.READ_ONLY the programm generate it very fast !
 
