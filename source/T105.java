@@ -21,19 +21,13 @@ public static void main(String[] args){
 		a = (Arbre)(o.readObject());
 		inChannel.close();
 		o.close(); 
-
-		/* FileInputStream fis = new FileInputStream("../doc/Arbre.arb");
-      	ObjectInputStream ois = new ObjectInputStream(fis);
-      	   a = (Arbre) ois.readObject();
-      	    ois.close(); */
 	    }
 	    catch(Exception e){
 		System.out.println("Le fichier n'a pas pu etre charge");
 		System.exit(1);
 	    }
 	}
-	else{
-	    if(args[0].equals("-c")){
+	else if(args[0].equals("-c")){
 		Dictionnaire d = new Dictionnaire();
 		a = Arbre.dico(d.dico, d.pertinence);
 		try{
@@ -42,12 +36,20 @@ public static void main(String[] args){
 		    o.close();
 		}
 		catch(Exception e){ e.printStackTrace(); }
-	    }
-	    else{
-		System.out.println("Mauvaise option");
+	}else if(args[0].equals("-s")){
+		try{
+		FileInputStream fis = new FileInputStream("../doc/Arbre.arb");
+      	ObjectInputStream ois = new ObjectInputStream(fis);
+      	a = (Arbre) ois.readObject();
+      	ois.close(); 
+      	}
+	    catch(Exception e){
+		System.out.println("Le fichier n'a pas pu etre charge");
 		System.exit(1);
 	    }
 	}
+	  
+	
 	new Modele(a);
     }
 }
