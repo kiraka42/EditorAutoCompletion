@@ -16,6 +16,9 @@ At the very begining, we have to generate a tree binary file data stucture with 
 option -s will provide the sequential access file -> it will take 10 seconds to loads the entire tree
 without option by default we use random access, it takes 3 seconds to loads the same entire tree
 
+javac T105.java; java T105 -s // seq access
+java T105 // random access
+
 
 *** thanks to  FileChannel.MapMode.READ_ONLY the programm generate it very fast !
 
