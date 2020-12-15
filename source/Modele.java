@@ -1,8 +1,5 @@
-package source.core.modele ;
 
-import source.core.modele.Modele ;
-import source.core.utils.Arbre ;
-import source.core.controllerView.ControleurVue ;
+
 
 import java.util.*;
 

@@ -1,8 +1,3 @@
-package source ;
-
-import source.T105;
-import source.core.modele.Modele ;
-import source.core.utils.* ;
 
 import java.io.*;
 import java.nio.*;
@@ -25,7 +20,12 @@ public static void main(String[] args){
 		ObjectInputStream o = new ObjectInputStream(new ByteArrayInputStream(tab));
 		a = (Arbre)(o.readObject());
 		inChannel.close();
-		o.close();
+		o.close(); 
+
+		/* FileInputStream fis = new FileInputStream("../doc/Arbre.arb");
+      	ObjectInputStream ois = new ObjectInputStream(fis);
+      	   a = (Arbre) ois.readObject();
+      	    ois.close(); */
 	    }
 	    catch(Exception e){
 		System.out.println("Le fichier n'a pas pu etre charge");

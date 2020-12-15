@@ -1,6 +1,5 @@
-package source.core.utils ;
 
-import source.core.utils.Memoire;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
