@@ -1,4 +1,7 @@
 # TexteMania
+https://medium.com/@patrick.chen_1404/when-use-random-access-instead-of-sequential-access-with-java-d20a519af8bd
+
+
 TextMania is a toolkit in java used for include autocomplession like (T105) in your application.This is an example with an
 text editor :
 
@@ -84,3 +87,5 @@ We have two main functions to use (the correction and autocomplession like)
 * For this example we have a TXT file with all french words and an priority ID for each words 
 
 * When we type a word, we have two list (4 words auto complete and 4 words with the best priority 
+
+😂😂😂😂😂
